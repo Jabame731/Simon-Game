@@ -107,3 +107,14 @@ function startOver() {
     started = false;
 
 }
+
+
+$(document).on('touchstart', function() {
+
+    if (!started){
+        $('#level-title').text('Level '+ level);
+        nextSequence();
+        started = true;
+    }
+
+})
